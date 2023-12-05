@@ -32,7 +32,7 @@ def main():
         }
     }
 
-    name = os.environ.get('ALLOW_LIST_MIDDLEWARE_NAME', 'ip-allowlist')
+    name = os.environ.get('ALLOW_LIST_MIDDLEWARE_NAME', 'ip-allow-list')
     namespace = os.environ.get('ALLOW_LIST_TRAEFIK_NAMESPACE', 'traefik-system')
 
     patch_resource = api.patch_namespaced_custom_object(
